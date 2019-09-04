@@ -1,9 +1,9 @@
 const express = require('express')
+require('./db/mongoose')
 const app = express()
 const port = process.env.PORT || 3000
+const Todo = require('./src/models/todo')
 
-
-// setup engine
 
 // set route
 app.get('/', (req, res) => {
